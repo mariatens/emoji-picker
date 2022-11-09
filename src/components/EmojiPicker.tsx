@@ -51,7 +51,7 @@ export default function EmojiPicker(): JSX.Element {
           <h1>Emoji picker</h1>
           <h2> Current emoji: {emojiFromCurrentRender}</h2>
           <h2> Previous emoji: {previousEmojiFromCurrentRender}</h2>
-          <h2> Your stored emojis: {emojis.map(EmojiStore)}</h2> 
+          <h2> Your stored emojis: {emojis.slice(-5).map(EmojiStore)}</h2> 
           <hr /> 
           <button onClick={handleEggEmoji}>🍳</button>
           <button onClick={handlePlateEmoji}>🍽️</button>
